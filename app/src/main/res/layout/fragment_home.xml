@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#F3FDFA"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_width="89dp"
+            android:layout_height="74dp"
+            android:background="@drawable/log" />
+
+        <LinearLayout
+            android:layout_width="246dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DigiLocker"
+                android:textColor="@color/purple_200"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DigiLocker"
+                android:textColor="@color/purple_200"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="40dp"
+            android:layout_height="67dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_round_notifications_24" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Welcome Abishek"
+        android:textSize="34dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/document"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textSize="22dp"
+        android:text="DigiLocker'Issued Documents' are at par with original Document as per IT Act.
+         "/>
+    <TextView
+        android:id="@+id/link"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="Link your Aadhar card to feth your original Document on DigiLocker."
+        android:textSize="22dp"
+        android:textStyle="bold"/>
+<!--Adhar card LL-->
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="20dp"
+        >
+        <ImageView
+            android:id="@+id/a_c_img"
+            android:layout_width="50dp"
+            android:background="@drawable/a_d_logo"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/a_c"
+            android:layout_marginLeft="5dp"
+            android:text="Aadhar Card"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/get_a_C"
+            android:background="@drawable/bt_shape"
+            android:text="Link"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="50dp"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/also_get"
+        android:text="Also get these"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<!--    <LinearLayout-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="109dp">-->
+<!---->
+<!---->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/document_recycle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+<!---->
+<!--    </LinearLayout>-->
+    <TextView
+        android:id="@+id/digi_use"
+        android:text="Where can i use DigiLocker?"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="109dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/use_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
